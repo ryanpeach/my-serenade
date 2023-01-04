@@ -1,0 +1,19 @@
+{
+  "name": "my-serenade",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanpeach/my-serenade.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanpeach/my-serenade/issues"
+  },
+  "homepage": "https://github.com/ryanpeach/my-serenade#readme",
+  "dependencies": {
+    "mustache": "^4.2.0",
+    "openai": "^3.1.0"
+  }
+}
