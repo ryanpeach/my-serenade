@@ -7,7 +7,7 @@
 
 // Toggle github copilot
 serenade.app("vscode").command("copilot toggle", (api) => {
-    api.pressKey("\\", ["option"]);
+    api.pressKey("enter", ["control"]);
 });
 
 // Next github copilot suggestion
