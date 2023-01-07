@@ -1,3 +1,9 @@
+// Magically fix any mistakes you make
+serenade.app("iterm").command("fuck", api => {
+    api.typeText("fuck");
+    api.pressKey("return");
+});
+
 /** ============================================
   *   Git
   * ============================================ */
