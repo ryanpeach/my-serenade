@@ -3,16 +3,16 @@
   * ============================================ */
 
 // Comment
-serenade.language("javascript").snippet(
-    "comment <%comment%>",
-    "// <%comment%>",
-    { "comment": ['capital', 'lowercase'] },
-    "inline"
-);
+// serenade.language("javascript").snippet(
+//     "add comment <%comment%>",
+//     "// <%comment%>",
+//     { "comment": ['capital', 'lowercase'] },
+//     "inline"
+// );
 
 // Comment Header
 serenade.language("javascript").snippet(
-    "comment header <%comment%>",
+    "add comment header <%comment%>",
     "<%newline%>/** ============================================<%newline%>  *<%indent%> <%comment%><%newline%>  * ============================================ */<%newline%>",
     { "comment": ['capital', 'lowercase'] },
     "inline"
@@ -24,19 +24,19 @@ serenade.language("javascript").snippet(
 
 // newline
 serenade.language("javascript").snippet(
-    "template new line",
+    "insert template new line",
     "<%newline%>",
 );
 
 // indent
 serenade.language("javascript").snippet(
-    "template indent",
+    "insert template indent",
     "<%indent%>",
 );
 
 // anything else
 serenade.language("javascript").snippet(
-    "template <%identifier%>",
+    "insert template <%identifier%>",
     "\<\%<%identifier%>\%\>",
     { "identifier": ['underscores'] },
     "inline"
@@ -44,18 +44,18 @@ serenade.language("javascript").snippet(
 
 // Create a custom global command
 serenade.language("javascript").snippet(
-    "create command <%identifier%>",
+    "add command <%identifier%>",
     "serenade.global().command(\"<%identifier%>\", api => {<%newline%><%indent%><%newline%>});",
 );
 
 // Create a custom app command
 serenade.language("javascript").snippet(
-    "create command <%identifier%> for <%application%>",
+    "add command <%identifier%> for <%application%>",
     "serenade.app(\"<%application%>\").command(\"<%identifier%>\", api => {<%newline%><%indent%><%newline%>});",
 );
 
 // Create a custom language snippet
 serenade.language("javascript").snippet(
-    "create snippet <%identifier%> for <%language%>",
+    "add snippet <%identifier%> for <%language%>",
     "serenade.language(\"<%language%>\").snippet(<%newline%><%indent%>\"<%identifier%>\",<%newline%><%indent%><%newline%>);",
 );

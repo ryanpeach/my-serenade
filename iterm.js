@@ -42,6 +42,12 @@ serenade.app("iterm").command("make directory <%directory%>", (api, matches) => 
     api.pressKey("return");
 });
 
+// Create file
+serenade.app("iterm").command("create file <%filename%>", (api, matches) => {
+    api.typeText("touch "+matches.filename);
+    api.pressKey("return");
+});
+
 // Go Home
 serenade.app("iterm").command("go home", api => {
     api.typeText("cd ~");
