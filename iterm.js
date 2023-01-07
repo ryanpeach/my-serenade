@@ -9,8 +9,8 @@ serenade.app("iterm").command("fuck", api => {
   * ============================================ */
 
 // Commit with a message
-serenade.app("iterm").command("git commit <%message%>", api => {
-  api.typeText("git commit -m \"<%message%>\"");
+serenade.app("iterm").command("git commit <%message%>", (api, matches) => {
+  api.typeText("git commit -m \""+matches.message+"\"");
   api.pressKey("return");
 });
 
